@@ -1,0 +1,31 @@
+
+
+{{#each articles}}
+  <div class="card article-card">
+
+    {{#if saved}}
+    <i class="fas fa-bookmark"></i>
+    {{/if}}
+
+    <img class="card-img-top" src="{{imageLink}}">
+    <div class="card-body article-card-body">
+
+      <h5 class="card-title"><strong>{{title}}</strong></h5>
+
+      <div class="row button-row text-center">
+        <div class="col-12">
+          <a href="{{link}}" target="_blank" class="btn solid-btn">Read</a>
+          <button type="button" class="btn trans-btn save-btn" data-id={{id}}>Save</button>
+        </div>
+      </div>
+
+      <div class="row stats-row">
+        <div class="col-12 stats-col">
+          <p class="stats"><i class="far fa-star article-icon"></i>&nbsp;{{numStars}} Stars</p>
+          <p class="stats"><i class="far fa-comment article-icon"></i>&nbsp;{{numComments}} Comments</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+{{/each}}
