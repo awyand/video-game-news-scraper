@@ -29,6 +29,9 @@ const ArticleSchema = new Schema({
   dateTime: {
     type: String
   },
+  saved: {
+    type: Boolean
+  },
   note: {
     type: Schema.Types.ObjectId,
     ref: 'Note'

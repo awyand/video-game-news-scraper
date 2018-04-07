@@ -1,5 +1,6 @@
 // Set up dependencies
 const express = require('express'),
+      exphbs = require('express-handlebars'),
       bodyParser = require('body-parser'),
       mongoose = require('mongoose'),
       axios = require('axios'),
@@ -22,9 +23,9 @@ app.use(bodyParser.json());
 // Set up routes
 require("./routes/api")(app);
 
-// Will have to update handlebars defaultLayout ********
-// app.engine("handlebars", handleBars({ defaultLayout: "main" }));
-// app.set("view engine", "handlebars");
+// Set up Handlebars
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 // Set up Mongoose and MongoDB
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/videoGameDB';
@@ -33,7 +34,7 @@ mongoose.Promise = Promise;
 // Connect to MongoDB
 mongoose.connect(MONGODB_URI);
 
-// Named callback function for when app has started
+// Function to log message once app is started
 const appStarted = () => console.log(`Video Game Scraper running at: http://localhost:${PORT}`);
 
 // Start app

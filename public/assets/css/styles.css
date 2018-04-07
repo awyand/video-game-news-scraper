@@ -1,0 +1,77 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #EDF2F4;
+  color: #2B2D42;
+}
+
+.header {
+  background-color: #2B2D42;
+  color: #EDF2F4;
+  height: 140px;
+}
+
+.header-title {
+  padding-top: 30px;
+}
+
+.header-subtitle {
+  margin-bottom: 0;
+}
+
+.article-card {
+  width: 50%;
+  margin: 40px auto;
+  box-shadow: 2px 2px 10px #8D99AE;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 10px gray;
+}
+
+.article-icon {
+  color: #D90429;
+}
+
+.solid-btn {
+  background-color: #D90429;
+  color: white;
+  border: 1px solid #D90429;
+}
+
+.solid-btn:hover,
+.trans-btn:hover {
+  background-color: #EF233C;
+  color: white;
+  background-color: #EF233C;
+}
+
+.trans-btn {
+  background-color: transparent;
+  border: 1px solid #D90429;
+  color: #D90429;
+}
+
+.article-card-body {
+  padding-bottom: 10px;
+}
+
+.button-row {
+  margin: 20px auto;
+}
+
+.stats-col {
+  padding-right: 5px;
+}
+.stats {
+  display: inline;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+.fa-bookmark {
+  font-size: 60px;
+  position: absolute;
+  right: 20px;
+  color: #D90429;
+}
