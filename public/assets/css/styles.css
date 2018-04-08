@@ -1,74 +1,11 @@
+/* GENERAL */
 body {
   font-family: 'Raleway', sans-serif;
   background-color: #EDF2F4;
   color: #2B2D42;
 }
 
-.header {
-  background-color: #2B2D42;
-  color: #EDF2F4;
-  height: 140px;
-}
-
-.header-title {
-  padding-top: 30px;
-}
-
-.header-subtitle {
-  margin-bottom: 0;
-}
-.nav-container {
-  background-color: #8D99AE;
-}
-
-.nav {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.nav-item {
-  margin: 0 auto;
-}
-
-.nav-link {
-  color: white;
-}
-
-.nav-link:hover {
-  color: #2B2D42;
-}
-
-.scrape-container {
-  margin: 40px auto;
-}
-
-.article-card {
-  width: 50%;
-  margin: 40px auto;
-  box-shadow: 2px 2px 10px #8D99AE;
-  transition: 0.5s;
-  position: relative;
-}
-
-.article-card:after, {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-}
-
-.article-card:hover,
-.article-card:focus {
-  box-shadow: 5px 5px 10px gray;
-  transform: scale3d(1.02, 1.02, 1);
-}
-
-.article-icon {
-  color: #D90429;
-}
-
+/* BUTTONS */
 .solid-btn {
   background-color: #D90429;
   color: white;
@@ -100,6 +37,87 @@ body {
   color: #EF233C;
 }
 
+/* HEADER */
+.header {
+  background-color: #2B2D42;
+  color: #EDF2F4;
+  height: 140px;
+}
+
+.header-title {
+  padding-top: 30px;
+}
+
+.header-subtitle {
+  margin-bottom: 0;
+}
+
+/* TOP NAV */
+.nav-container {
+  background-color: #8D99AE;
+}
+
+.nav {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.nav-item {
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #2B2D42;
+}
+
+/* INDEX PAGE */
+.scrape-container {
+  margin: 40px auto;
+  width: 60%;
+}
+
+/* EMPTY PAGES */
+.empty-jumbo {
+  background-color: #EF233C;
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: white;
+  box-shadow: 2px 2px 10px #8D99AE;
+}
+
+/* ARTICLE CARDS */
+.article-card {
+  width: 50%;
+  margin: 40px auto;
+  box-shadow: 2px 2px 10px #8D99AE;
+  transition: 0.5s;
+  position: relative;
+}
+
+.article-card:after, {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.article-card:hover,
+.article-card:focus {
+  box-shadow: 5px 5px 10px gray;
+  transform: scale3d(1.02, 1.02, 1);
+}
+
+.article-icon {
+  color: #D90429;
+}
+
 .article-card-body {
   padding-bottom: 10px;
 }
@@ -126,15 +144,8 @@ body {
   filter: drop-shadow(2px 5px 5px gray);
 }
 
-.empty-jumbo {
-  background-color: #EF233C;
-  width: 60%;
-  margin: 0 auto;
-  margin-top: 40px;
-  color: white;
-  box-shadow: 2px 2px 10px #8D99AE;
-}
-
+/* SIDE NAV */
+/* Source: https://codepen.io/mikegbabb/pen/myPbyK */
 .share {
   position: fixed;
   left: 0;

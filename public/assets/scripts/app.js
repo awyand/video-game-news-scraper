@@ -11,6 +11,7 @@ $(document).ready(function() {
     location.reload();
   });
 
+  // Function to send GET request to /scrape route and handle response
   function scrapeArticles() {
     // AJAX call
     $.ajax({
@@ -28,11 +29,13 @@ $(document).ready(function() {
     });
   }
 
+  // Function to send PUT request to /articles/:id route and handle response
   function changeStatus() {
     // Grab id and new status from button
+    // Attribute data-new-status holds "true" for save button and "false" for remove button
     const mongoId = $(this).attr('data-id');
     const newStatus = $(this).attr('data-new-status');
-    // AJAX call to save article by ID
+    // AJAX call to update article by ID
     $.ajax({
       method: 'PUT',
       url: `/articles/${mongoId}`,
@@ -47,6 +50,7 @@ $(document).ready(function() {
           console.log('saved');
         } else {
           // error message here
+          console.log('something went wrong.');
         }
         // reload page
         location.reload();
