@@ -291,6 +291,7 @@ body {
   }
 
   .header-nav-container {
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 999;
