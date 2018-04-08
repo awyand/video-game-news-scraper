@@ -296,4 +296,9 @@ body {
     top: 0;
     z-index: 999;
   }
+
+  .scrape-container {
+    width: 100%;
+    padding: 0;
+  }
 }
