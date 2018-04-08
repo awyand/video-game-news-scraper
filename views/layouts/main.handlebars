@@ -21,19 +21,16 @@
 <body>
 
   <!-- Modal -->
-  <div class="modal fade" id="articles-modal" tabindex="-1" role="dialog" aria-labelledby="articles-modal-label" aria-hidden="true">
+  <div class="modal fade" id="articles-modal" tabindex="-1" role="dialog" aria-labelledby="articles-modal-label" aria-hidden="true" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="articles-modal-label">Articles Added</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+          <h5 class="modal-title" id="articles-modal-label"><strong>Scrape Complete</strong></h5>
         </div>
         <div class="modal-body articles-added-div">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary reload-btn" data-dismiss="modal">Close</button>
+          <button type="button" class="btn solid-btn reload-btn" data-dismiss="modal">Close</button>
         </div>
       </div>
     </div>
@@ -41,49 +38,61 @@
 
   <!-- Header -->
   <div class="container-fluid text-center header">
-    <h1 class="header-title">Mongo Scraper</h1>
+    <h1 class="header-title"><strong>Mongo Scraper</strong></h1>
     <p class="header-subtitle">Kotaku Edition</p>
   </div>
 
+  <!-- Sticky Side Nav -->
+  <!-- I stole this pretty much as is, so the class names are unrelated to this site -->
   <ul class="share">
-  <li>
-      <div class="social-link">
-          <i class="fas fa-home"></i>
+    <li>
+      <a href="/">
+        <div class="social-link">
+          <i class="fas fa-home sidebar-icon"></i>
           <div class="nav-label">
-              <span>Go Home</span>
+            <span>Go Home</span>
           </div>
-      </div>
-  </li>
-  <li>
-      <div class="social-link">
-          <i class="far fa-save"></i>
-          <div class="nav-label">
-              <span>View Saved</span>
-          </div>
-      </div>
-  </li>
-  <li>
-      <div class="social-link">
-          <i class="fab fa-github"></i>
-          <div class="nav-label">
-              <span>View Source</span>
-          </div>
-      </div>
-  </li>
-</ul>
-
-  <!-- Nav -->
-  <ul class="nav">
-    <li class="nav-item">
-      <a class="nav-link" href="/">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/saved">Saved</a>
+        </div>
+      </a>
     </li>
     <li>
-      <button type="button" class="btn btn-primary scrape-btn">Scrape</button>
+      <a href="/saved">
+        <div class="social-link">
+          <i class="far fa-save sidebar-icon"></i>
+          <div class="nav-label">
+            <span>View Saved</span>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/awyand/video-game-news-scraper" target="_blank">
+        <div class="social-link">
+          <i class="fab fa-github sidebar-icon"></i>
+          <div class="nav-label">
+            <span>View Source</span>
+          </div>
+        </div>
+      </a>
     </li>
   </ul>
+
+  <!-- Nav -->
+  <div class="container-fluid text-center nav-container">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/saved">Saved</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Scrape Button Div -->
+  <div class="container text-center scrape-container">
+    <button type="button" class="btn scrape-btn solid-btn">Scrape</button>
+  </div>
 
   <!-- Handlebars body -->
   {{{ body }}}

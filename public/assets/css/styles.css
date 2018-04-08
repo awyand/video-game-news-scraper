@@ -17,6 +17,30 @@ body {
 .header-subtitle {
   margin-bottom: 0;
 }
+.nav-container {
+  background-color: #8D99AE;
+}
+
+.nav {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.nav-item {
+  margin: 0 auto;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: #2B2D42;
+}
+
+.scrape-container {
+  margin: 40px auto;
+}
 
 .article-card {
   width: 50%;
@@ -64,6 +88,18 @@ body {
   color: #D90429;
 }
 
+.btn-empty {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.btn-empty:hover {
+  background-color: white;
+  border: 1px solid white;
+  color: #EF233C;
+}
+
 .article-card-body {
   padding-bottom: 10px;
 }
@@ -92,7 +128,7 @@ body {
 
 .empty-jumbo {
   background-color: #EF233C;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   margin-top: 40px;
   color: white;
@@ -120,8 +156,9 @@ body {
 .share li:nth-of-type(1) .social-link:hover,
 .share li:nth-of-type(3) .social-link,
 .share li:nth-of-type(3) .social-link:hover {
-  background: #3B5998 50% 50% no-repeat;
+  background: #2B2D42 50% 50% no-repeat;
   background-size: 25px auto;
+  color: white;
 }
 
 .share li:nth-of-type(1) .nav-label,
@@ -131,7 +168,7 @@ body {
   -webkit-transition: background 0.4s ease, -webkit-transform 0.4s ease;
   -webkit-transition-delay: 0s, 0.1s;
   transition: background 0.4s ease, transform 0.4s ease 0.1s;
-  background: #1e2e4f;
+  background: #606594;
 }
 
 .share li:nth-of-type(1) .social-link:hover .nav-label,
@@ -141,13 +178,14 @@ body {
   -webkit-transition: -webkit-transform 0.4s ease, background 0.4s ease;
   -webkit-transition-delay: 0s, 0.1s;
   transition: transform 0.4s ease, background 0.4s ease 0.1s;
-  background: #3B5998;
+  background: #2B2D42;
 }
 
 .share li:nth-of-type(2) .social-link,
 .share li:nth-of-type(2) .social-link:hover {
-  background: #4099FF 50% 50% no-repeat;
+  background: #D90429 50% 50% no-repeat;
   background-size: 25px auto;
+  color: white;
 }
 
 .share li:nth-of-type(2) .nav-label {
@@ -156,7 +194,7 @@ body {
   -webkit-transition: background 0.4s ease, -webkit-transform 0.4s ease;
   -webkit-transition-delay: 0s, 0.1s;
   transition: background 0.4s ease, transform 0.4s ease 0.1s;
-  background: #0065d9;
+  background: #7D0218;
 }
 
 .share li:nth-of-type(2) .social-link:hover .nav-label {
@@ -165,7 +203,7 @@ body {
   -webkit-transition: -webkit-transform 0.4s ease, background 0.4s ease;
   -webkit-transition-delay: 0s, 0.1s;
   transition: transform 0.4s ease, background 0.4s ease 0.1s;
-  background: #4099FF;
+  background: #D90429;
 }
 
 .share li .social-link {
@@ -219,4 +257,10 @@ body {
   -moz-transform: rotateY(0);
   -webkit-transform: rotateY(0);
   transform: rotateY(0);
+}
+
+.sidebar-icon {
+  font-size: 20px;
+  position: relative;
+  top: 3px;
 }
