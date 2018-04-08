@@ -11,6 +11,7 @@ Mongo Scraper: Kotaku Edition scrapes the Kotaku video games blog (https://kotak
 When a user clicks the Scrape button at the top of the page, the application scrapes the Kotaku website for articles and checks to see if they exist in the database. If the article is not already saved, it adds it and informs the user of how many new articles have been added (including if there were no new articles scraped).
 
 ![Scrape](https://github.com/awyand/video-game-news-scraper/blob/master/readme-images/welcome-scrape.png)
+
 ![Results Modal](https://github.com/awyand/video-game-news-scraper/blob/master/readme-images/scrape-modal.png)
 
 ### Article Results
@@ -48,23 +49,19 @@ If there are no saved articles in the database, the view reflect that fact and p
 
 [insert video walkthrough]
 
-## Architecture
-
-![Architecture](https://github.com/awyand/friend-finder/blob/master/app/public/assets/images/architecture.png)
-
 ## Packages and Libraries
 This application uses the following packages and libraries:
 
 ### Back End
   * [express](https://www.npmjs.com/package/express)
-  * [mongoose]()
-  * [axios]()
-  * [cheerio]()
+  * [mongoose](https://www.npmjs.com/package/mongoose)
+  * [axios](https://www.npmjs.com/package/axios)
+  * [cheerio](https://www.npmjs.com/package/cheerio)
   * [body-parser](https://www.npmjs.com/package/body-parser)
-  * [express-handlebars]
+  * [express-handlebars](https://www.npmjs.com/package/express-handlebars)
 
 ### Front End
-  * [jQuery]
-  * [Bootstrap]
-  * [Google Fonts]
-  * [Font Awesome]
+  * [jQuery](https://jquery.com/)
+  * [Bootstrap](https://getbootstrap.com/)
+  * [Google Fonts](https://fonts.google.com/)
+  * [Font Awesome](https://fontawesome.com/)
