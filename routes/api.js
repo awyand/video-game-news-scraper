@@ -101,7 +101,8 @@ module.exports = (app) => {
             numStars: parseInt($(this).find('.js_like_count').text()),
             imageLink: $(this).find('picture > source').attr('data-srcset'),
             dateTime: $(this).find('time > a').text(),
-            saved: false
+            saved: false,
+            author: $(this).find('.author > a').text()
           };
 
           // Search for article title in database
