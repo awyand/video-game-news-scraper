@@ -46,8 +46,7 @@ If there are no saved articles in the database, the view reflect that fact and p
 ![Empty Saved](https://github.com/awyand/video-game-news-scraper/blob/master/readme-images/empty-save.png)
 
 ### Video Walkthrough
-
-[insert video walkthrough]
+[![Video Walkthrough](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
 ## Packages and Libraries
 This application uses the following packages and libraries:
